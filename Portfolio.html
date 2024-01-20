@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OM DEDANIYA</title>
+
+    <style>
+        body{
+    background-color: #D2E3C8;
+      overflow-x: hidden; /* Disable horizontal scrolling */
+  }
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 40px;
+    white-space: nowrap;
+}
+
+
+nav ul li {
+    list-style: square;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 10px;
+  }
+  nav ul li a {
+    color: #86A789;
+    position: relative;
+    padding: 5px 5px;
+    font-size: 18px;
+  }
+  nav ul li a:hover {
+    color: #4F6F52;
+  }
+  nav ul li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #4F6F52;
+    transition: 0.3s;
+    bottom: 0;
+  }
+  nav ul li a:hover:after {
+    width: 100%;}
+ 
+    .btn {
+        color: #D2E3C8;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 13px 35px;
+        border-radius: 400px;
+        display: inline-block;
+        font-weight: 500;
+        transition: all 0.4s ease-in-out;
+        background-size: 152% 100%;
+        background: #4F6F52;
+        border: 3px solid #4F6F52;
+      }
+      .btn:hover {
+        background: transparent;
+        border-color: #4F6F52;
+        color: #4F6F52;
+        transform: scale(1.1);
+      }    
+      
+.myname{
+    color: #739072;
+    font-size: 45px;
+    margin-left: 130px;
+    position: relative;
+    top: -10px;
+    font-family: Bradley Hand, cursive;
+    text-decoration:blink;
+
+}
+.myname1{
+    color: #739072;
+    font-size: 15px;
+    top: 35px;   
+    position: relative;
+    font-family: Bradley Hand, cursive;
+    left: -350px;
+    font-weight: bold;
+}
+
+.myname2{
+    color: #739072;
+    font-size: 15px;
+    top: 35px;   
+    position: relative;
+    font-family: Bradley Hand, cursive;
+    left: 130px;
+    overflow: visible;
+    width: 100%;
+    display: flex;
+}
+.link{
+
+  display: flex;
+  align-items: center;
+  /*justify-content: space-between;*/
+  padding: 17px 30px;
+  margin-left: 265px;
+  
+}
+
+/*.link img {
+  -webkit-transform: translateY(160px);
+  -ms-transform: translateY(126px);
+  transform: translateY(160px);
+}*/
+
+h3{
+  margin-top: -40px;
+}
+.linkedin{
+  width: 28px;
+  height: 28px;    
+  margin-left: 40px;
+}
+.instagram{
+  width: 25px;
+  height: 25px; 
+  margin-left: 50px;
+}
+.twitter{
+  width: 25px;
+  height: 25px; 
+  margin-left: 50px;
+}
+.github{
+  width: 28px;
+  height: 28px; 
+  margin-left: 50px;
+}
+
+.about{
+    align-content: center;
+    padding-left: 800px;
+    padding-right: 70px;
+    padding-top: -100px;
+    font-size: 16.5px;
+    color: #4F6F52;
+    margin-top: -90px;
+}
+.skill{
+  align-content: center;
+  padding-left: 800px;
+  padding-right: 70px;
+  padding-top: 50px;
+  font-size: 16.5px;
+  color: #4F6F52;
+  margin-top: -30px;
+}
+.future_vision{
+  align-content: center;
+  padding-left: 800px;
+  padding-right: 70px;
+  padding-top: 50px;
+  font-size: 16.5px;
+  color: #4F6F52;
+  margin-top: -20px;   
+}
+
+.rightbox {
+  padding: 0em 34rem 0em 0em;
+  height: 100%;
+}
+
+.rb-container {
+  font-family: "PT Sans", sans-serif;
+  width: 50%;
+  margin-top: -280px;
+  display: block;
+  position: relative;
+}
+
+.rb-container ul.rb {
+  margin: 2.5em 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.rb-container ul.rb li {
+  list-style: none;
+  margin: auto;
+  margin-left: 10em;
+  min-height: 50px;
+  border-left: 3px dashed #fff;
+  padding: 0 0 50px 30px;
+  position: relative;
+}
+
+.rb-container ul.rb li:last-child {
+  border-left: 0;
+}
+
+.rb-container ul.rb li::before {
+  position: absolute;
+  left: -18px;
+  top: -5px;
+  content: " ";
+  border: 8px solid rgb(150, 185, 155);
+  border-radius: 500%;
+  background: #4F6F52;
+  height: 20px;
+  width: 20px;
+  transition: all 500ms ease-in-out;
+}
+
+.rb-container ul.rb li:hover::before {
+  border-color: #4F6F52;
+  transition: all 1000ms ease-in-out;
+}
+
+ul.rb li .timestamp {
+  color: #4F6F52;
+  position: relative;
+  width: 150px;
+  font-size: 12px;
+  font-family: Bradley Hand, cursive;
+  white-space: nowrap;
+}
+
+.item-title {
+  color: #4F6F52;
+  font-family: Bradley Hand, cursive;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  color: #5A5A5A;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+h2 {
+  margin: ;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.connect{
+  margin: ;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 10;
+  top: 0;
+  font-family: Bradley Hand, cursive;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 180px;
+  position: relative;
+  overflow-x: hidden;
+}
+.timeline__event {
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  margin: 20px 0;
+  border-radius: 6px;
+  align-self: center;
+  width: 50vw;
+}
+.timeline__event:nth-child(2n+1) {
+  flex-direction: row-reverse;
+}
+.timeline__event:nth-child(2n+1) .timeline__event__date {
+  border-radius: 0 6px 6px 0;
+}
+.timeline__event:nth-child(2n+1) .timeline__event__content {
+  border-radius: 6px 0 0 6px;
+}
+.timeline__event:nth-child(2n+1) .timeline__event__icon:before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #f6a4ec;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  right: auto;
+  z-index: -1;
+  transform: translateX(-50%);
+  -webkit-animation: fillTop 2s forwards 4s ease-in-out;
+          animation: fillTop 2s forwards 4s ease-in-out;
+}
+.timeline__event:nth-child(2n+1) .timeline__event__icon:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #f6a4ec;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  top: 50%;
+  left: auto;
+  transform: translateY(-50%);
+  -webkit-animation: fillLeft 2s forwards 4s ease-in-out;
+          animation: fillLeft 2s forwards 4s ease-in-out;
+}
+.timeline__event__title {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #9251ac;
+  letter-spacing: 1.5px;
+}
+.timeline__event__content {
+  padding: 20px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  background: #fff;
+  width: calc(40vw - 84px);
+  border-radius: 0 6px 6px 0;
+}
+.timeline__event__date {
+  color: #f6a4ec;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: #9251ac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  padding: 0 20px;
+  border-radius: 6px 0 0 6px;
+}
+.timeline__event__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9251ac;
+  padding: 20px;
+  align-self: center;
+  margin: 0 20px;
+  background: #f6a4ec;
+  border-radius: 100%;
+  width: 40px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  padding: 40px;
+  height: 40px;
+  position: relative;
+}
+.timeline__event__icon i {
+  font-size: 32px;
+}
+.timeline__event__icon:before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #f6a4ec;
+  position: absolute;
+  top: 0%;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-animation: fillTop 2s forwards 4s ease-in-out;
+          animation: fillTop 2s forwards 4s ease-in-out;
+}
+.timeline__event__icon:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #f6a4ec;
+  position: absolute;
+  left: 0%;
+  z-index: -1;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-animation: fillLeftOdd 2s forwards 4s ease-in-out;
+          animation: fillLeftOdd 2s forwards 4s ease-in-out;
+}
+.timeline__event__description {
+  flex-basis: 100%;
+}
+.timeline__event--type2:after {
+  background: #555ac0;
+}
+.timeline__event--type2 .timeline__event__date {
+  color: #87bbfe;
+  background: #555ac0;
+}
+.timeline__event--type2:nth-child(2n+1) .timeline__event__icon:before, .timeline__event--type2:nth-child(2n+1) .timeline__event__icon:after {
+  background: #87bbfe;
+}
+.timeline__event--type2 .timeline__event__icon {
+  background: #87bbfe;
+  color: #555ac0;
+}
+.timeline__event--type2 .timeline__event__icon:before, .timeline__event--type2 .timeline__event__icon:after {
+  background: #87bbfe;
+}
+.timeline__event--type2 .timeline__event__title {
+  color: #555ac0;
+}
+.timeline__event--type3:after {
+  background: #24b47e;
+}
+.timeline__event--type3 .timeline__event__date {
+  color: #aff1b6;
+  background-color: #24b47e;
+}
+.timeline__event--type3:nth-child(2n+1) .timeline__event__icon:before, .timeline__event--type3:nth-child(2n+1) .timeline__event__icon:after {
+  background: #aff1b6;
+}
+.timeline__event--type3 .timeline__event__icon {
+  background: #aff1b6;
+  color: #24b47e;
+}
+.timeline__event--type3 .timeline__event__icon:before, .timeline__event--type3 .timeline__event__icon:after {
+  background: #aff1b6;
+}
+.timeline__event--type3 .timeline__event__title {
+  color: #24b47e;
+}
+.timeline__event:last-child .timeline__event__icon:before {
+  content: none;
+}
+
+@media (max-width: 786px) {
+  .timeline__event {
+    flex-direction: column;
+    align-self: center;
+  }
+  .timeline__event__content {
+    width: 100%;
+  }
+  .timeline__event__icon {
+    border-radius: 6px 6px 0 0;
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+  }
+  .timeline__event__icon:before, .timeline__event__icon:after {
+    display: none;
+  }
+  .timeline__event__date {
+    border-radius: 0;
+    padding: 20px;
+  }
+  .timeline__event:nth-child(2n+1) {
+    flex-direction: column;
+    align-self: center;
+  }
+  .timeline__event:nth-child(2n+1) .timeline__event__date {
+    border-radius: 0;
+    padding: 20px;
+  }
+  .timeline__event:nth-child(2n+1) .timeline__event__icon {
+    border-radius: 6px 6px 0 0;
+    margin: 0;
+  }
+}
+@-webkit-keyframes fillLeft {
+  100% {
+    right: 100%;
+  }
+}
+@keyframes fillLeft {
+  100% {
+    right: 100%;
+  }
+}
+@-webkit-keyframes fillTop {
+  100% {
+    top: 100%;
+  }
+}
+@keyframes fillTop {
+  100% {
+    top: 100%;
+  }
+}
+@-webkit-keyframes fillLeftOdd {
+  100% {
+    left: 100%;
+  }
+}
+@keyframes fillLeftOdd {
+  100% {
+    left: 100%;
+  }
+}
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  color: #5A5A5A;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#container {
+  border: solid 3px #474544;
+  max-width: 768px;
+  margin: 100px auto;
+  position: relative;
+  
+  overflow-x: hidden;
+}
+
+form {
+  padding: 37.5px;
+  margin: 30px 0;
+}
+
+h1 {
+  color: #474544;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  border-bottom: solid 2px #474544;
+  margin: -0.512em auto;
+  width: 80px;
+}
+
+.icon_wrapper {
+  margin: 50px auto 0;
+  width: 100%;
+}
+
+.icon {
+  display: block;
+  fill: #474544;
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+
+.email {
+	float: right;
+	width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px #474544;
+	color: #474544;
+	font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+.message {
+	float: none;
+}
+
+.name {
+	float: left;
+	width: 45%;
+}
+
+select {
+  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+.telephone {
+  width: 100%;
+}
+
+textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color: #474544;
+}
+
+:-moz-placeholder { 
+	color: #474544;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #474544;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #474544;
+}
+
+#form_button {
+  background: none;
+  border: solid 2px #474544;
+  color: #474544;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+  margin: 0 auto; /* add this line to center the button horizontally */
+  display: block; 
+}
+
+#form_button:hover {
+  background: #474544;
+  color: #F2F3EB;
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+  
+  .underline {
+    width: 68px;
+  }
+  
+  #form_button {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
+  }
+  
+  .icon {
+    height: 35px;
+    width: 35px;
+  }
+  
+  .underline {
+    width: 53px;
+  }
+  
+  input[type='text'], [type='email'], select, textarea {
+    font-size: 0.875em;
+  }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <a href="#" class="btn">Resume</a>
+      </nav>
+      
+    <span class="myname">
+        OM DEDANIYA
+        <span class="myname1">
+            COMPUTER ENGINEER | WEB DEVELOPER
+        </span>
+    </span>
+    <span class="myname2">
+        "Crafting pixels, shaping dreams where code meets creativity,<br> the web comes to life."
+    </span>
+    
+    
+        <div class="about" id="About">
+            Hello! I’m OM DEDANIYA a self-taught web developer and a computer engineering student. My journey into the world of technology began in 2021 when I decided to pursue computer engineering. Despite not having a formal background in this field, my passion for problem-solving and creating innovative solutions led me to explore web development.
+        </div>
+     
+        <div class="skill" id="Service">
+            Over the years, I’ve acquired a diverse set of skills that include HTML, CSS, JavaScript, and Python. I have a knack for designing responsive and user-friendly websites. My self-taught journey in web development has honed my ability to learn quickly, adapt, and work on diverse projects
+        </div>
+        <div class="future_vision">
+            Looking ahead, I see myself leveraging my skills in web development and the knowledge I gain from my computer engineering studies to create solutions that make a difference. I aim to work on projects that align with my values and contribute positively to society. I’m particularly interested in the intersection of web development and artificial intelligence, and how this can be used to create smart, intuitive interfaces.
+        </div>
+      <!--  <span class="link">
+
+            <a href="https://www.linkedin.com/in/om-dedaniya-b055b5227/">
+                <img src="linkedin.png" class="linkedin" alt="linkedin" />
+            </a>
+            <a href="https://github.com/Om240">
+                <img src="github.png" class="github" alt="github" />
+            </a>
+            <a href="https://www.instagram.com/om_dedaniya24/">
+                <img src="instagram.png" class="instagram" alt="instagram" />
+            </a>
+            <a href="https://twitter.com/Omdedaniya">
+                <img src="twitter.png" class="twitter" alt="twitter" />
+            </a>
+            </span>    
+-->
+            <div class="rightbox">
+                <div class="rb-container">
+                  <ul class="rb">
+                    <li class="rb-item" ng-repeat="itembx">
+                      <div class="timestamp">
+                        2021-2025 <br>Degree(Computer engineering)
+                      </div>
+                      <div class="item-title">Vadodara Institute Of Engineering,Vadodara</div>
+            
+                    </li>
+                    <li class="rb-item" ng-repeat="itembx">
+                      <div class="timestamp">
+                        2019-2021<br> HSC
+                      </div>
+                      <div class="item-title">Sheth Hiralal Chhotalal Parekh Navsari High School, Navsari.</div>
+            
+                    </li>
+            
+                    <li class="rb-item" ng-repeat="itembx">
+                      <div class="timestamp">
+                        2019<br>SSC
+                      </div>
+                      <div class="item-title">Shree Saraswati Vidhyamandir, Navsari.</div>
+                </div>
+              </div>
+              <h2>EXPERIENCE</h2>
+              <div class="timeline">
+            
+                <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+                  <div class="timeline__event__icon ">
+                    <!-- <i class="lni-sport"></i>-->
+              
+                  </div>
+                  <div class="timeline__event__date">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </div>
+                  <div class="timeline__event__content ">
+                    <div class="timeline__event__title">
+                      Super Mario Brothers
+                    </div>
+                    <div class="timeline__event__description">
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut architecto harum quidem dolorem in!</p>
+                    </div>
+                  </div>
+                </div>
+              
+                <!--second-->
+              
+                <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+                  <div class="timeline__event__icon">
+                    <!-- <i class="lni-sport"></i>-->
+              
+                  </div>
+                  <div class="timeline__event__date">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </div>
+                  <div class="timeline__event__content">
+                    <div class="timeline__event__title">
+                      Super Mario Bros: The Lost Levels
+                    </div>
+                    <div class="timeline__event__description">
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut architecto harum quidem dolorem in!</p>
+                    </div>
+                  </div>
+                </div>
+              
+                <!--third-->
+              
+                <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+                  <div class="timeline__event__icon">
+                    <!-- <i class="lni-sport"></i>-->
+              
+                  </div>
+                  <div class="timeline__event__date">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </div>
+                  <div class="timeline__event__content">
+                    <div class="timeline__event__title">
+                      Super Mario Bros. 2
+                    </div>
+                    <div class="timeline__event__description">
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut architecto harum quidem dolorem in!</p>
+                    </div>
+              
+                  </div>
+                </div>   
+              <div id="container">
+                <h2 class="connect"> CONNECT WITH ME</h2>
+                <div class="underline">
+                </div>
+                <div class="icon_wrapper">
+                  <svg class="icon" viewBox="0 0 145.192 145.192">
+                    <path d="M126.82,32.694c-2.804,0-5.08,2.273-5.08,5.075v2.721c-1.462,0-2.646,1.185-2.646,2.647v1.995    c0,1.585,1.286,2.873,2.874,2.873h20.577c1.462,0,2.646-1.185,2.646-2.647v-3.041c0-1.009-0.816-1.825-1.823-1.825v-2.722    c0-2.802-2.276-5.075-5.079-5.075h-1.985v-3.829c0-3.816-3.095-6.912-6.913-6.912h-0.589h-20.45c0-2.67-2.164-4.835-4.833-4.835    H56.843c-2.67,0-4.835,2.165-4.835,4.835H34.356v-3.384h-9.563v3.384v1.178h-7.061v1.416c-2.67,0.27-10.17,1.424-13.882,5.972    c-1.773,2.17-2.44,4.791-1.983,7.793c0.463,3.043,1.271,6.346,2.128,9.841c2.354,9.616,5.024,20.515,0.549,28.077    C2.647,79.44-3.125,90.589,2.201,99.547c4.123,6.935,13.701,10.44,28.5,10.44c1.186,0,2.405-0.023,3.658-0.068v9.028h-0.296    c-2.516,0-4.558,2.039-4.558,4.558v4.566h100.04v-4.564c0-2.519-2.039-4.558-4.558-4.558h-0.297V84.631h0.297    c2.519,0,4.558-2.037,4.558-4.556v-0.009c0-2.516-2.039-4.556-4.556-4.556l-36.786-0.009V61.973c0-2.193-1.777-3.971-3.972-3.971    v-4.711h0.456c1.629,0,2.952-1.32,2.952-2.949h14.227V34.459h1.658c2.672,0,4.834-2.165,4.834-4.834h20.45v3.069H126.82z     M34.06,75.511c-2.518,0-4.558,2.04-4.558,4.556v0.009c0,2.519,2.042,4.556,4.558,4.556h0.296v24.12l-0.042-1.168    c-15.994,0.574-26.122-2.523-30.106-9.229C-0.464,90.5,4.822,80.347,6.55,77.423c4.964-8.382,2.173-19.774-0.29-29.825    c-0.843-3.442-1.639-6.696-2.088-9.638c-0.354-2.35,0.129-4.3,1.484-5.958c3.029-3.714,9.509-4.805,12.076-5.1v1.233h7.061v1.49    v2.684c-2.403,1.114-4.153,2.997-4.676,5.237H18.15c-0.584,0-1.056,0.474-1.056,1.056v0.83c0,0.584,0.475,1.056,1.056,1.056h1.984    c0.561,2.18,2.304,3.999,4.658,5.092v0.029c0,0-2.282,20.823,16.479,22.099v1.102c0,1.177,0.955,2.133,2.133,2.133h3.297    c1.178,0,2.133-0.956,2.133-2.133V50.135c0-1.177-0.955-2.132-2.133-2.132h-3.297c-1.178,0-2.133,0.955-2.133,2.132    c-1.575-0.235-5.532-1.17-6.635-4.547c2.36-1.092,4.109-2.913,4.669-5.097h1.308c0.722,0,1.309-0.584,1.309-1.308v-0.578    c0-0.584-0.475-1.056-1.056-1.056h-1.539c-0.542-2.332-2.416-4.271-4.968-5.363v-2.559h17.651c0,2.67,2.166,4.835,4.836,4.835 h2.392v15.88h13.639c0,1.629,1.321,2.949,2.951,2.949h0.899v4.711c-2.194,0-3.972,1.778-3.972,3.971v13.529L34.06,75.511z     M95.188,101.78c0,8.655-7.012,15.665-15.664,15.665c-8.653,0-15.667-7.01-15.667-15.665c0-8.647,7.014-15.664,15.667-15.664    C88.177,86.116,95.188,93.132,95.188,101.78z M97.189,45.669h-9.556c0-0.896-0.726-1.62-1.619-1.62H74.494    c-0.896,0-1.621,0.727-1.621,1.62h-8.967v-11.21h33.283V45.669z"></path>
+                    <path d="M70.865,101.78c0,4.774,3.886,8.657,8.66,8.657c4.774,0,8.657-3.883,8.657-8.657c0-4.773-3.883-8.656-8.657-8.656    C74.751,93.124,70.865,97.006,70.865,101.78z"></path>
+                  </svg>
+                </div>
+                <form action="#" method="post" id="contact_form">
+                  <div class="name">
+                    <label for="name"></label>
+                    <input type="text" placeholder="NAME" name="name" id="name_input" required>
+                  </div>
+                  <div class="email">
+                    <label for="email"></label>
+                    <input type="email" placeholder="E-MAIL" name="email" id="email_input" required>
+                  </div>
+                  <div class="telephone">
+                    <label for="name"></label>
+                    <input type="text" placeholder="Contact No." name="telephone" id="telephone_input" required>
+                  </div>
+                 
+                  <div class="message">
+                    <label for="message"></label>
+                    <textarea name="message" placeholder="MESSAGE" id="message_input" cols="25" rows="3" required></textarea>
+                  </div>
+                  <div class="submit">
+                    <input type="submit" value="Send Message" id="form_button" />
+                  </div> 
+                  
+                </form><!-- // End form -->
+              </div><!-- // End #container -->
+              <center>
+                <h3>ALSO CONNECT WITH ME ON SOCIALLY</h3>
+                <div class="link">
+
+                  <a href="https://www.linkedin.com/in/om-dedaniya-b055b5227/">
+                      <img src="linkedin.png" class="linkedin" alt="linkedin" />
+                  </a>
+                  <a href="https://github.com/Om240">
+                      <img src="github.png" class="github" alt="github" />
+                  </a>
+                  <a href="https://www.instagram.com/om_dedaniya24/">
+                      <img src="instagram.png" class="instagram" alt="instagram" />
+                  </a>
+                  <a href="https://twitter.com/Omdedaniya">
+                      <img src="twitter.png" class="twitter" alt="twitter" />
+                  </a>
+                </div> 
+                </center>
+</body>
+</html>
